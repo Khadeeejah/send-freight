@@ -1,0 +1,109 @@
+:root {
+    --light: #fff;
+    --primary: #0746A7;
+    --gray: #eeeff3;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+  }
+  .detail-container{
+      height: 300px;
+      background-color: #fff;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 2rem;
+  }
+  .detail-container h3{
+      letter-spacing: 1px;
+  }
+  .flex-cargo-text{
+      display: flex;
+      padding-top: 2.5rem;
+      justify-content: space-between;
+      align-items: center !important;
+  }
+  .flex-toggle-text{
+      display: flex;
+      align-items: center !important;
+  }
+  .cargo-text{
+      margin-left: 1.2rem;
+      font-weight: 300;
+      font-family: sans-serif;
+  }
+  .cargo-text span{
+      font-weight: bold;
+      color: #3c3c3c;
+  }
+  
+  .dimension-container{
+      width: 350px;
+      background-color: rgb(182, 182, 182);
+      height: 50px;
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      padding: 1px;
+      border-radius: .5rem;
+  }
+  .active-package{
+      height: 48px;
+      width: 175px;
+      background-color: #fff;
+      color: #0746A7;
+      font-family: sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      border-bottom-left-radius: .5rem;
+      border-top-left-radius: .5rem;
+      cursor: pointer;
+      outline: none;
+      border: 1px solid rgb(228, 227, 227);
+  }
+  .non-active-package{
+      height: 48px;
+      width: 175px;
+      background-color: #f1f2f6;
+      border-bottom-right-radius: .5rem;
+      border-top-right-radius: .5rem;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: #b1b4bb;
+      font-family: sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+  
+  }
+  .total-box{
+      margin-top: 4rem;
+      display: flex;
+  }
+  .input-total-container {
+      width: 19%;
+      position: relative;
+  }
+  .input-total-container input{
+      height: 48px;
+      width: 85%;
+      font-size: 1rem;
+      font-family: sans-serif;
+      outline: none;
+      padding-left: .8rem;
+  }
+  .input-total-container input::placeholder{
+      position: absolute;
+      right: 1rem;
+      top: .8rem;
+  }
+  .input-total-container label{
+      background: white;
+      background-size: contain;
+      color: #303030;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-left: .7rem;
+      padding-right: 2px;
+      padding-left: 2px;
+      position: absolute;
+      top: -.4rem;
+  }
