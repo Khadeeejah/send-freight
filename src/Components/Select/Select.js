@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react"
 
-// styles
+
 import "./Select.css";
 
 
@@ -16,16 +16,15 @@ const Select = ( { optionsList } ) => {
                 setDisplayList( false );
             }
         }
-        // Bind the event listener
+        
         document.addEventListener( "mousedown", handleClickOutside );
         return () => {
-            // Unbind the event listener on clean up
+            
             document.removeEventListener( "mousedown", handleClickOutside );
         };
     }, [wrapperRef] );
 
-    // This method handles the setting of name in select text area
-    // and list display on selection
+    
     const handleOptionClick = ( id ) => {
         setSelectedCountryID( id );
         setDisplayList( !displayList );
@@ -39,7 +38,7 @@ const Select = ( { optionsList } ) => {
                 tabIndex={ 0 }
                 className={ displayList ? "selected-text-drop active" : "selected-text" }
                 onClick={ () => setDisplayList( prevState => !prevState ) }
-                // onKeyDown={ handleOptionClick }
+               
             >
                 { selectedCountry.name }
             </div>

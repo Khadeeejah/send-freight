@@ -16,3 +16,5 @@ const Truck = () => {
         </div>
     )
 }
+
+export default Truck

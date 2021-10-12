@@ -7,7 +7,7 @@ import "./Booking.css"
  import { Container } from '@material-ui/core'
 import Import from '../Import/Import'
 import CargoDetails from '../CargoDetails/CargoDetails'
-import Footer from '../../Components/Footer/AdditionalService'
+
 import AdditionalService from '../../Components/Footer/AdditionalService'
 const Booking = () => {
     return (
@@ -41,7 +41,7 @@ const Booking = () => {
                                 <div className="same-cards">
                                     <p className="inland-truck"> Inland<br></br> (Truck & Barge)</p>
                                     <div className="truck-freight-icon-container">
-                                        {/* { <Truck/>} */}
+                                        {<Truck/>}
                                     </div>
                                 </div>
                                 <div className="same-cards">
